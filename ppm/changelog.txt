@@ -1,0 +1,25 @@
+[2020-04-20]
+	- Change http method for update detail list /api/v1/targets/:id/details api from POST to PUT
+	- Add create new target detail api in POST /api/v1/targets/:id/details
+	- Update UI:
+		+ Add new target detail button in vulnerability form
+		+ Disable closing target detail dialog when press ESC or click outside the dialog
+		+ Add confirm dialog when cancelling target detail dialog
+
+[2020-04-29]
+    - Move "platform" attribute from Scope to target
+    - Show description column in list targets table
+    - Add number of requests to target details
+    - Append the platform list
+    - Fix UI:
+        + Remove description tips which may leads to misunderstanding
+        + Fix style for containers, textarea
+        + Remove required validation for remark, severity textarea (vulnerability)
+        + Fix old target details disappear when add a new detail from vulnerability form
+
+[2020-05-08]
+    - Fix target platform is not saved in database; Fix UI: Increasing dialogs' width, Add filter, param value to pftargets dialog
+
+[2020-05-11]
+    - Change date variables' data type from int64 to time.Time
+    - Fix UI: add confirm dialog when removing an incident
